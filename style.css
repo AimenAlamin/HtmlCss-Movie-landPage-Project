@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+}
+body{
+    
+    font-family: "Tajawal", sans-serif;
+    background-color: rgb(13, 0, 0);
+    
+}
+.header{
+    width: 100%;
+    height: 350px;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 10px solid #321010;
+}
+#header-img{
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+}
+#BlackCover{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.7;  
+}
+#menu-header{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    direction: rtl;   
+}
+#menu{   
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#menu > .btn{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;  
+    border-radius: 10px;
+    padding: 8px;
+    transition: background 0.3s;
+    
+}
+#menu > .btn:hover{
+    background-color: rgba(88,88,88,0.5);
+}
+.active{
+    background-color: #7d625ed1;
+}
+#main-content{
+    position: relative;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    top:-200px;
+    
+    
+}
+#imgframe{
+    height: 200px;
+    width: 230px;
+    padding: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto;
+  
+}
+#imgframe > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+   transition: box-shadow 0.2s, width 0.4s, height 0.4s opacity 1s;
+   opacity: 0.75;
+   
+}
+#imgframe > img:hover{
+    height: 110%;
+    width: 110%;
+    box-shadow: 0px 9px 8px #550d24;
+    cursor:pointer;
+    opacity: 1;
+   
+}
+#centered-content{
+    text-align: center;
+    color:white;
+    font-size: 23px;
+    
+}
+#main-body{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top:-150px;
+    font-size: 16px;
+    direction: rtl;
+}
+#body-title{
+    text-align: center;
+    color:white
+}
+#body-header{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+}
+.features{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    direction: rtl;
+    
+}
+.feature{
+    background-color: #271823fe;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+#trend-section{
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+    font-size: 16px;
+    direction: rtl;
+    color: white;
+    padding: 20px 0px;
+}
+#trend-section h2{
+    margin-right: 30px;
+}
+.trends{
+    margin-top: 30px;
+    display: flex;
+    direction: rtl;
+    justify-content: center;
+}
+.trend{
+    margin: 20px 30px;
+    width: 40%;
+    height: 170px;
+    background-color: #3e23234f;
+    display: flex;
+    border: 1px solid #3e23234f;
+    border-radius: 16px;
+    transition: transform 0.7s;
+}
+.trend:hover{
+    transform: translateY(-5px);
+}
+.pic{
+   width: 100%;
+}
+
+.pic>img{
+    height: 100%;
+    width: 100%;
+}
+.pic,.info{
+    flex: 1 1 0;
+}
+
+.info{
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.info >button{
+    background-color: #7d625ed1;
+    width: 90px;
+    height: 40px;
+    font-size: 16px;
+    padding: 7px;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    margin: 17px auto;
+    transition: padding 0.4s;
+    font-family: "Tajawal", sans-serif;
+}
+.info>button:hover{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#footer{
+    background-color: #220c0c82;
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 200px;
+}
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+    .header {
+        height: 250px;
+    }
+
+    #main-content {
+        top: -150px;
+    }
+
+    #main-body {
+        top: -50px;
+    }
+
+    .trend {
+        width: 80%;
+    }
+}
+
+/* For screens between 768px and 1200px (tablets) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header {
+        height: 300px;
+    }
+
+    #main-content {
+        top: -100px;
+    }
+
+    #main-body {
+        top: -100px;
+    }
+
+    .trend {
+        width: 60%;
+    }
+}
+
+/* For screens larger than 1200px (desktops) */
+@media (min-width: 1200px) {
+    /* Keep the default styles for desktop screens */
+}
